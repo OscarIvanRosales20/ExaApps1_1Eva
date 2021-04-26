@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A7A7A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/img4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtVwRadio"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="#059F74"
+            android:gravity="center"
+            android:text="Radio:"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTxRadio"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="#B5860C"
+            android:gravity="center"
+            android:hint="Ingresa valor"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#D10000"
+            android:textColorHint="#A10202"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtVwAngulo"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="#059F74"
+            android:gravity="center"
+            android:text="Angulo: "
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edtTxAngulo"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="#B5860C"
+            android:gravity="center"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#D10000"
+            android:textColorHint="#A10202"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/skBrAngulo"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#938D08"
+        android:clickable="true"
+        android:max="100"
+        android:thumb="@android:drawable/btn_default_small"
+        app:tickMarkTint="#00000000" />
+
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="Calcular"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#B61313"
+        app:iconTint="#000000" />
+
+</LinearLayout>
